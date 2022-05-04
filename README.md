@@ -1,22 +1,20 @@
-![hexo-theme-apollo](https://cloud.githubusercontent.com/assets/9530963/13026956/08e76eca-d277-11e5-8bfc-2e80cea20a0d.png)
+# hexo-theme-apollo
+
+a fork version of https://github.com/pinggod/hexo-theme-apollo
 
 ## 文档
 
-- [中文文档](https://github.com/pinggod/hexo-theme-apollo/blob/master/doc%2Fdoc-zh.md)
-- [Document](https://github.com/pinggod/hexo-theme-apollo/blob/master/doc%2Fdoc-en.md)
-
-## 贡献
-
-通过 Fork 该项目，自由发挥自己的创造性想法可能更适合你。
+- [中文文档](https://github.com/p7e4/hexo-theme-apollo/blob/master/doc%2Fdoc-zh.md)
+- [Document](https://github.com/p7e4/hexo-theme-apollo/blob/master/doc%2Fdoc-en.md)
 
 ## 安装
 
 ``` bash
-hexo init Blog 
-cd Blog 
+hexo init Blog
+cd Blog
 npm install
-npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
-git clone https://github.com/pinggod/hexo-theme-apollo.git themes/apollo
+npm install --save hexo-renderer-pug hexo-generator-feed
+git clone --depth 1 https://github.com/p7e4/hexo-theme-apollo.git themes/apollo
 ```
 
 ## 启用
@@ -26,13 +24,20 @@ git clone https://github.com/pinggod/hexo-theme-apollo.git themes/apollo
 ```yaml
 theme: apollo
 
-# 在归档页面显示所有文章
-# 需要上面安装的 hexo-generator-archive 插件支持
-archive_generator:
-    per_page: 0
-    yearly: false
-    monthly: false
-    daily: false
+# 生成订阅源
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: favicon.png
+  autodiscovery: true
+  template:
 ```
 
 ## 更新
