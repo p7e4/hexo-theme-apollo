@@ -69,6 +69,16 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, non numquam sae
 
 ![https://cloud.githubusercontent.com/assets/9530963/14064341/0fa3c754-f432-11e5-8ad7-5d063d4a0886.png](https://cloud.githubusercontent.com/assets/9530963/14064341/0fa3c754-f432-11e5-8ad7-5d063d4a0886.png)
 
+<!--
+## 评论
+
+Hexo-theme-apollo 支持两种评论插件：Disqus 和 Duoshuo. 请在 `themes/apollo/_config.yml` 文件中做如下配置:
+
+```yaml
+
+```
+-->
+
 ## 警告块
 
 使用警告块需要 `div` 标签和 `tip` 类名：

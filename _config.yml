@@ -1,7 +1,7 @@
 menu:
     Blog: /
     About: /about
-    GitHub: https://github.com/p7e4
+    GitHub: 
     Rss: /atom.xml
 
 favicon: /favicon.png
@@ -10,7 +10,6 @@ logo: /favicon.png
 # Comment
 # e.g disqus: seansun
 disqus:
-duoshuo:
 
 # Copyright Infomation
 startyear: 2022
